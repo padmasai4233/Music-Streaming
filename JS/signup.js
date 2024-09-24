@@ -27,10 +27,10 @@ document.getElementById('signup-form').addEventListener('submit', function(event
       flag+=1
       return;
     }
-    if(flag==0)
-    {
-      window.location.href="dashboard.html";
-    }
+    // if(flag==0)
+    // {
+    //   window.location.href="dashboard.html";
+    // }
     document.getElementById('signup-form').reset();
   });
 function checkusername(username)
