@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="/assets/css/register_Success.css") 
+    body 
+        section.success-section
+        .success-container
+            h2 Registration Successful!
+            p Welcome, #{username}! Your registration was successful.
+            //- img(src="./assets/img/register_Success_Img.jpg" alt="Success") 
+            a.success-link(href="/signin.html") Go to Login
