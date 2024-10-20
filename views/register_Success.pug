@@ -11,4 +11,7 @@ html(lang="en")
             h2 Registration Successful!
             p Welcome, #{username}! Your registration was successful.
             //- img(src="./assets/img/register_Success_Img.jpg" alt="Success") 
+            p#countdown You will be redirected to the login page in 10 seconds. // Countdown message
             a.success-link(href="/signin.html") Go to Login
+        
+        script(src="/assets/js/successRegisterCounter.js") 

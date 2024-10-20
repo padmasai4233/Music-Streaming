@@ -123,10 +123,10 @@ body {
     z-index: 20;
     opacity: 0;
 }
-
+/* 
 .sidebar ul li:hover .tooltip {
     opacity: 1;
-}
+} */
 
 .sidebar.active ul li .tooltip {
     display: none;
@@ -241,8 +241,13 @@ h5
 .discover_belowphoto i
 {
     font-size: 40px;
-    color: black;
+    color: rgb(32, 225, 51);
     cursor: pointer;
+    transition: all ease;
+}
+.discover_belowphoto i:hover
+{
+    font-size: 45px;
 }
 #get_image
 {
@@ -264,7 +269,4 @@ h5
     display: flex;
     flex-direction: column;
 }
-/* #popular_movie h1
-{
-    flex-grow: 1;
-} */
+

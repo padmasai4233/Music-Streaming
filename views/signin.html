@@ -8,19 +8,14 @@
     <link rel="stylesheet" href="./assets/CSS/signin.css">
     <link rel="stylesheet" href="./assets/CSS/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- <style>
-        #error-message {
-            display: none; /* Initially hidden */
-            color: red; /* Error message color */
-        }
-    </style> -->
+
 </head>
 <body>
     <header id="header">
         <nav id="nav">
              <h1 id="nav_heading">THINK'S</h1>
              <div id="links">
-                <a href="./index.html">Home</a>
+                <a href="/">Home</a>
                 <a href="./signin.html">Sign In</a>
                 <a href="./signup.html">Sign Up</a>
                 <a href="">Contact Us</a>
@@ -35,7 +30,7 @@
             <div class="container">
                 <div class="form-box">
                     <h2>Sign In</h2>
-                    <form id="signinForm" action="/login" method="POST">
+                    <form id="signinForm" action="/user/login" method="POST">
                         <div class="input-group">
                             <input name="username" type="text" id="username" required>
                             <label for="username">Username or Email</label>
