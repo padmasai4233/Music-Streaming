@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
 });
 
 //MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/Music_Login')
+mongoose.connect('mongodb+srv://padmasaigorrela:<blPo0AwMKVlDAxdl>@cluster0.02tuf.mongodb.net/music_db?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log('Failed to connect to MongoDB', err));
 
