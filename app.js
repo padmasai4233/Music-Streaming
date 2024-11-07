@@ -4,7 +4,7 @@ const url = require('url');
 const session = require('express-session');
 const mongoose = require('mongoose');
 const app = express();
-
+require('dotenv').config();
 //routes
 const userRoute = require('./routes/Mongodb/user');
 //Pug Engine
@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
 });
 
 //MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/Music_Login')
+mongoose.connect(process.env.MONGODB_URI)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log('Failed to connect to MongoDB', err));
 
