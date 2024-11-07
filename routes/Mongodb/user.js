@@ -32,7 +32,6 @@ router.post('/login', async (req, res, next) => {
     // Set session
     req.session.userId = user._id;
     req.session.user = user;
-    console.log(req.session.user.username)
     // Save session and redirect
     req.session.save((err) => {
       if (err) {
@@ -87,7 +86,6 @@ router.get('/artist', (req, res)=>{
 
 //Profile Route
 router.get('/profile', (req, res)=>{
-  console.log(req.session)
   if(!req.session.userId)
     return res.redirect('/signin.html')
 

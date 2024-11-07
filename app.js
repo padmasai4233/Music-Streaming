@@ -55,7 +55,7 @@ app.use((req, res) => {
 
 // Favicon request handler
 app.get('/favicon.ico', (req, res) => res.status(204));
-
+ 
 //Server startup
 app.listen(5865, () => {
     console.log('Server is running @ http://localhost:5865');
